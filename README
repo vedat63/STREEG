@@ -1,0 +1,18 @@
+The STREEG application was developed within the MATLAB GUI (App) environment for EEG signal analysis and tested using MATLAB version 2024b.
+To run the application, `.edf` files must be placed in the `/EDF` directory, and the Excel files containing experiment duration data (in seconds) must be placed in the `/EXCEL` directory.
+
+The filenames in the `/EDF` and `/EXCEL` directories must match the filenames specified within the Excel files.
+
+If an error occurs while reading an EDF file, a newer version of the EDF reading function should be installed in the relevant MATLAB directory.
+If the error persists, the channel names within the EDF file (e.g., Rarm+, Rarm-, Larm+, Larm-, DIF1+, DIF1P, ... DIF10+, DIF10-) must be corrected using a hex editor by replacing `+` with `P` and `-` with `N`.
+This error stems from a flaw in the EDF file structure itself; the `Anonymous.edf` file provided with the application does not contain this error.
+
+The application includes a brief help file; however, as the application is frequently updated, the help file may not reflect the latest version.
+You may email the software team if assistance is required.
+
+Software Team
+Vedat TOPUZ
+vtopuz@marmara.edu.tr
+
+Ayça Ak
+aycaak@marmara.edu.tr
